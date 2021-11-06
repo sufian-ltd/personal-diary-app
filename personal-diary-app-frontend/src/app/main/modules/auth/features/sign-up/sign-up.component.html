@@ -1,0 +1,56 @@
+<div class="flex flex-col flex-auto items-center sm:justify-center min-w-0" style="background-color: #42716a">
+    <div class="w-full sm:w-auto sm:p-8 sm:rounded-2xl sm:shadow sm:bg-card" style="width: 500px !important;">
+        <!-- Logo -->
+        <div class="w-12 mx-auto">
+            <img src="/assets/images/avatars/signature.png">
+        </div>
+        <form [formGroup]="signUpForm" class="p-5">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <mat-label style="margin-top: -15px" fxFlex="30%" fxFlex.md="40%" fxFlex.sm="40%" fxFlex.xs="40%">
+                    Username<strong class="required"> *</strong>
+                </mat-label>
+                <mat-form-field class="fuse-mat-dense flex-auto" fxFlex="70%" fxFlex.md="60%" fxFlex.sm="60%"
+                                fxFlex.xs="60%">
+                    <input matInput formControlName="userName" required>
+                    <mat-error style="margin-bottom: 2px">Username is required!</mat-error>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <mat-label style="margin-top: -15px" fxFlex="20%" fxFlex.md="30%" fxFlex.sm="40%" fxFlex.xs="40%">
+                    Password<strong class="required"> *</strong>
+                </mat-label>
+                <mat-form-field class="fuse-mat-dense flex-auto" fxFlex="70%" fxFlex.md="60%" fxFlex.sm="60%"
+                                fxFlex.xs="60%">
+                    <input matInput formControlName="password" required type="password">
+                    <mat-error style="margin-bottom: 2px">Password is required!</mat-error>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <mat-label style="margin-top: -15px" fxFlex="20%" fxFlex.md="30%" fxFlex.sm="40%" fxFlex.xs="40%">
+                    Email<strong class="required"> *</strong>
+                </mat-label>
+                <mat-form-field class="fuse-mat-dense flex-auto" fxFlex="70%" fxFlex.md="60%" fxFlex.sm="60%"
+                                fxFlex.xs="60%">
+                    <input matInput formControlName="email" required type="email">
+                    <mat-error style="margin-bottom: 2px">Email is required!</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="flex justify-end mt-3">
+                <button style="color: #FFFFFF" (click)="signUp()" [disabled]="!signUpForm.valid"
+                        class="px-8"
+                        mat-flat-button
+                        color="primary"
+                        type="button">
+                    sign up
+                </button>
+            </div>
+        </form>
+        <div class="mt-4 text-md font-medium text-secondary text-center">
+            <span>Go to</span>
+            <a
+                    class="ml-1 text-primary-500 hover:underline"
+                    [routerLink]="['/sign-in']">sign in
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+
+ */
+/* ----------------------------------------------------------------------------------------------------- */
+$base-color: #90cec5;
+
+.heading {
+    background-color: $base-color;
+    color: #000000 !important;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.sub-heading {
+    background-color: $base-color;
+    color: #000000 !important;
+    padding: 10px;
+}
+
+.body {
+    background-color: #F0FDF4;
+}
+
+.cursor {
+    cursor: pointer !important;
+}
+
+.outside-body {
+    background-color: #EEF2FF;
+}
+
+.go-to-home-page {
+    margin-top: -50px;
+    color: #FFFFFF !important;
+}
+
+/*-----Date 03/05/2021-----*/
+
+.readOnly .mat-form-field-flex {
+    background-color: #e4e4e4 !important;
+}
+
+.tab-header-title {
+    //white-space: pre-wrap !important;
+}
+
+.warn,
+.required {
+    color: red;
+}
+
+.success-snackbar {
+    background: #008000 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.error-snackbar {
+    background: #ff0000 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.warn-snackbar {
+    background: #d79121 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.header-font-title {
+    font-size: 1.50rem;
+    padding-bottom: 2px;
+
+}
+
+.dialog-background {
+    mat-dialog-container {
+        background: #F0FDF4 !important;
+    }
+}
+
+.save-button {
+    background: #008000 !important;
+    color: #ffffff !important;
+}
+
+.cancel-button {
+    background: #ff2f25 !important;
+    color: #ffffff !important;
+}
+
+.fuse-mat-rounded .mat-flat-button,
+.mat-raised-button {
+    background: #4b60bd !important;
+    border-radius: 5px !important;
+}
+
+.dark.bg-card.dark\:border-b {
+    background: radial-gradient(circle, #b7bfe5 0%, #9fd3d0 100%);
+    color: #333333 !important;
+}
+
+table {
+    th {
+        background-color: $base-color !important;
+        color: #000000 !important;
+    }
+}
+
+.leading-5.truncate.text-secondary {
+    color: #333333 !important;
+}
+
+
+
+//.fuse-vertical-navigation-item-wrapper > a.fuse-vertical-navigation-item-active {
+//    background-color:blue !important;
+//}
+//a.fuse-vertical-navigation-item-active {
+//    background-color: #0d9388 !important;
+//    color: #FFFFFF !important;
+//}
+//
+//.fuse-vertical-navigation-wrapper{
+//    background-color: #FFFFFF !important;
+//    color: #333333 !important;
+//}
+
+.list-page-outside-body{
+    background-color: #F0FDF4;
+    margin: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.backToTop{
+    background-color: rgba(111, 208, 246, 0.5);;
+
+    position: fixed;
+    bottom: 40px;
+    right: 0.1%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #1f1f1f;
+    //text-decoration: none;
+    ////opacity: 0;
+    //pointer-events: none;
+    transition: all 0.4s;
+}
+
+.backToTop:hover{
+    background-color: #4b60bd;
+}
+
+
+.modal-dialog {
+    width: 360px !important;
+    margin-top: 120px;
+    margin: 30px auto;
+    .modal-content {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    .confirm {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        min-height: 150px;
+        .content {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff !important;
+            font-weight: 700;
+        }
+        .buttons {
+            padding: 10px 15px;
+            float: right;
+            button {
+                margin-right: 10px;
+            }
+        }
+    }
+}
